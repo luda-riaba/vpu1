@@ -9,20 +9,53 @@ h1, h2, h3, h4, h5, h6{
 }
 
 
+
+
+
+.hovergallery img{
+   
+  
+-webkit-transform:scale(0.6); /*Webkit: уменьшаем размер до 0.8*/
+-moz-transform:scale(0.6); /*Mozilla: масштабирование*/
+-o-transform:scale(0.6); /*Opera: масштабирование*/
+-webkit-transition-duration: 0.7s; /*Webkit: длительность анимации*/
+-moz-transition-duration: 0.7s; /*Mozilla: длительность анимации*/
+-o-transition-duration: 0.7s; /*Opera: длительность анимации*/
+
+opacity: 1; /*Начальная прозрачность изображений*/
+
+
+}
+
+.hovergallery img:hover{
+-webkit-transform:scale(1.2); /*Webkit: увеличиваем размер до 1.2x*/
+-moz-transform:scale(1.2); /*Mozilla: масштабирование*/
+-o-transform:scale(1.2); /*Opera: масштабирование*/
+box-shadow:0px 0px 30px gray; /*CSS3 тени: 30px размытая тень вокруг всего изображения*/
+-webkit-box-shadow:0px 0px 30px gray; /*Webkit: тени*/
+-moz-box-shadow:0px 0px 30px gray; /*Mozilla: тени*/
+opacity: 1;
+ 
+}
+
+
+
+
+
 .wrapper-blue{
 background: linear-gradient(45deg, #292929 25%, transparent 25%, transparent 75%, #292929 75%), linear-gradient(45deg, #292929 25%, transparent 25%, transparent 75%, #292929 75%) 0.1875em 0.1875em, radial-gradient(at 50% 0, #484847, #090909);
 background-size: 0.375em 0.375em, 0.375em 0.375em, 100% 100%;
 }
 
 .ruler{border-top: 2px solid #178ce6;}
-p{ font-family: 'open_sansregular'; font-size: 14px; line-height: 22px; color: #9b9b9b; padding-bottom: 25px; margin-bottom: 0;}
+p{ font-family: 'open_sansregular'; font-size: 14px; line-height: 22px; color: #000000; padding-bottom: 25px; margin-bottom: 0;}
 .last{padding-bottom: 0;}
 .spacing-t{padding-top: 30px;}
 .spacing-b{padding-bottom: 30px;}
 .spacing-l{padding-left: 30px;}
 .spacing-r{padding-right: 30px;}
-.icon{color: #d80112; margin-right: 5px;}
-.readmore{color: #178ce6; text-transform: uppercase; line-height: 1px; font-family: 'open_sansbold';}
+.icon{color: #d80112; padding-bottom:15px; margin-right: 20px;}
+.readmore{color: #178ce6; text-transform: uppercase; font-family: 'open_sansbold';}
 .readmore:hover{color: #d80112; text-decoration: none;}
 
 .site-header{overflow: hidden; padding: 60px 0; text-align: center;}
@@ -113,7 +146,7 @@ p{ font-family: 'open_sansregular'; font-size: 14px; line-height: 22px; color: #
         -moz-box-shadow:   0px 0px 10px 1px #aaa;
   -webkit-box-shadow: 0px 0px 10px 1px #aaa;
   box-shadow: 0px 0px 10px 1px #aaa;}
-    .featured-block img{}
+    .featured-block img{display:block; margin:0 auto;}
     .featured-block .block-content{ padding: 30px; text-align: center;}
     .featured-block .block-content img{width: 100%;}
     .featured-block h1{font-size: 16px; color: #0c3f74; font-family: 'open_sansbold'; line-height: 24px;
