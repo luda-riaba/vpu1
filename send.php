@@ -22,6 +22,6 @@ if(isset($_POST['submit'])){
 ?>
 <!--Переадресация на главную страницу сайта, через 3 секунды-->
 <script language="JavaScript" type="text/javascript">
-function changeurl(){eval(self.location="https://luda-riaba.github.io/vpu1/kontakt.html/index.php");}
+function changeurl(){eval(self.location="https://luda-riaba.github.io/vpu1/kontakt.php");}
 window.setTimeout("changeurl();",3000);
 </script>
